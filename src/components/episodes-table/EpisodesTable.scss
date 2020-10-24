@@ -1,0 +1,20 @@
+.episodes-container {
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0 5vw;
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+    height: 8vh;
+    align-items: center;
+    margin-bottom: 25px;
+    
+    .add-button {
+      color: #572814;
+      background-color: #ffc000;
+      margin-right: 40px;
+    }
+  }
+}

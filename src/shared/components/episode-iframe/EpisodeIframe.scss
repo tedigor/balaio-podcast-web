@@ -1,0 +1,27 @@
+.iframe-holder {
+  height: 150px;
+  z-index: 1;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+  .close-button {
+    position: absolute;
+    color: black;
+    top: -50px;
+    right: 25px;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  iframe {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+  }
+
+  audio {
+    width: 100%;
+  }
+}

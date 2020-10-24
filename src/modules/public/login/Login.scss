@@ -1,0 +1,31 @@
+$border-color: #ffebb0;
+
+.login-page {
+	height: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 0 10vw 0 10vw;
+
+	.login-form {
+		min-width: 250px;
+	}
+	.divider {
+		border-left: 1px solid $border-color;
+		height: 30vh;
+		width: 0;
+	}
+
+	.signin-form {
+		min-width: 250px;
+	}
+
+	@media screen and (max-width: 430px) {
+		.divider {
+			width: 40vw;
+			border-top: 1px solid $border-color;
+			height: 0;
+		}
+	}
+}

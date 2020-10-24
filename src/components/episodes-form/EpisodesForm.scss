@@ -1,0 +1,32 @@
+.episodes-container {
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+
+  .form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .title {
+      display: flex;
+      justify-content: space-between;
+      height: 8vh;
+      padding: 0 15vw;
+      align-items: center;
+    }
+
+    .episodes-form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .input {
+        width: 50%;
+        margin: 15px;
+      }
+
+    }
+  }
+}

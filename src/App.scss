@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Myriad Pro Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("./assets/fonts/aero-matics-regular"), format("ttf");
+}
+
+* {
+  font-family: "Myriad Pro Regular", sans-serif !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  scroll-behavior: smooth !important;
+}
+
+@mixin scrollbars(
+  $size,
+  $foreground-color,
+  $background-color: mix($foreground-color, white, 0%)
+) {
+  ::-webkit-scrollbar {
+    height: $size;
+    width: $size;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: $foreground-color;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: $background-color;
+  }
+}
+
+@include scrollbars(0.3em, #572814); .app {
+  height: 100%;
+  overflow-x: hidden;
+  .page {
+    padding: 4vh 0;
+  }
+}
